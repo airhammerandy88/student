@@ -26,50 +26,56 @@ string Student::GetStudentId() const
 
 string Student::GetFirstName() const
 {
-    return string();
+    return firstName;
 }
 
 string Student::GetLastName() const
 {
-    return string();
+    return lastName;
 }
 
 string Student::GetEmailAddress() const
 {
-    return string();
+    return emailAddress;
 }
 
 int Student::GetAge() const
 {
-    return 0;
+    return age;
 }
 
-void Student::SetStudentID(string studentId)
+void Student::SetStudentID(string sId)
 {
+    studentId = sId;
 }
 
-void Student::SetFirstName(string firstName)
+void Student::SetFirstName(string fName)
 {
+    firstName = fName;
+
 }
 
-void Student::SetLastName(string lastName)
+void Student::SetLastName(string lName)
 {
+    lastName = lastName;
 }
 
-void Student::SetEmailAddres(string emailAddress)
+void Student::SetEmailAddres(string eAddress)
 {
+    emailAddress = eAddress;
 }
 
-void Student::SetAge(int age)
+void Student::SetAge(int aGe)
 {
+    age = aGe;
 }
 
-void Student::PrintStudentData()
+void Student::PrintStudentData(string firstName, string lastName, string emailAddress, int degreeVal)
 {
-    cout << "A1   " << "First Name:   " << GetFirstName << "    ";  //strange tab spacing
-    cout << "Last name:   " << GetLastName << "   ";
-    cout << "Email:   " << GetEmailAddress << "   ";
-    cout << "Age:   " << GetAge << "    ";
-    cout << "daysInCourse:   " << GetNumDaysToCompleteCourse << "   ";
-    cout << "Degree Program:    " << DegreeProgram << "   ";
+    cout << "A1   " << "First Name:   " << firstName << "    " << endl;  //strange tab spacing
+    cout << "Last name:   " << lastName << "   " << endl;
+    cout << "Email:   " << emailAddress << "   " << endl;
+    cout << "Age:   " << age << "    " << endl;
+    cout << "daysInCourse:   " << GetNumDaysToCompleteCourse << "   " << endl;
+    cout << "Degree Program:    " << degreeVal << "   " << endl;
 }

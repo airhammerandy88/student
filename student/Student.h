@@ -13,7 +13,7 @@ private:
 	string emailAddress;
 	int age;
 	int numDaysToCompleteCourse[5];
-	enum DegreeProgram { SECURITY, NETWORK, SOFTWARE };
+	
 
 public:
 
@@ -34,9 +34,9 @@ public:
 	void SetEmailAddres(string emailAddress);
 	void SetAge(int age);
 	//void SetNumDaysToCompleteCourse[5];
-	//void SetDegreeProgram{ SECURITY, NETWORK, SOFTWARE };
+	
 
-	void PrintStudentData();
+	void PrintStudentData(string firstName, string lastName, string emailAddress, int degreeVal);
 
 
 
