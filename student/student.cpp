@@ -15,7 +15,7 @@ Student::Student()
 {
 }
 
-Student::Student(string studentId, string firstName, string lastName, string emailAddress, int age, int numDaysToCompleteCourse[5], DegreeProgram)
+Student::Student(string studentId, string firstName, string lastName, string emailAddress, int age)//add degree and maybe array
 {
 }
 
@@ -70,12 +70,12 @@ void Student::SetAge(int aGe)
     age = aGe;
 }
 
-void Student::PrintStudentData(string firstName, string lastName, string emailAddress, int degreeVal)
+void Student::PrintStudentData(string firstName, string lastName, string emailAddress) //degree
 {
     cout << "A1   " << "First Name:   " << firstName << "    " << endl;  //strange tab spacing
     cout << "Last name:   " << lastName << "   " << endl;
     cout << "Email:   " << emailAddress << "   " << endl;
     cout << "Age:   " << age << "    " << endl;
     cout << "daysInCourse:   " << GetNumDaysToCompleteCourse << "   " << endl;
-    cout << "Degree Program:    " << degreeVal << "   " << endl;
+   // cout << "Degree Program:    " << degreeVal << "   " << endl;
 }

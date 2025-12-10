@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "degree.h"
+//#include "degree.h"
 
 using namespace std;
 
@@ -18,7 +18,7 @@ private:
 public:
 
 	Student();
-	Student(string studentId, string firstName, string lastName, string emailAddress, int age, int numDaysToCompleteCourse[5], enum DegreeProgram);
+	Student(string studentId, string firstName, string lastName, string emailAddress, int age); //add degree
 
 	string GetStudentId() const;
 	string GetFirstName() const;
@@ -26,7 +26,7 @@ public:
 	string GetEmailAddress() const;
 	int GetAge() const;
 	int GetNumDaysToCompleteCourse[5]; //need research
-	enum GetDegreeProgram {SECURITY, NETWORK, SOFTWARE}; // need research
+	//enum GetDegreeProgram {SECURITY, NETWORK, SOFTWARE}; // need research
 
 	void SetStudentID(string studentId);
 	void SetFirstName(string firstName);
@@ -36,7 +36,7 @@ public:
 	//void SetNumDaysToCompleteCourse[5];
 	
 
-	void PrintStudentData(string firstName, string lastName, string emailAddress, int degreeVal);
+	void PrintStudentData(string firstName, string lastName, string emailAddress);//degree
 
 
 

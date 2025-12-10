@@ -10,11 +10,16 @@ int main() {
 								   "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
 									"A5,Andy,Jones,ajone355@wgu.edu,37,30, 35, 40, SOFTWARE" };
 
-	Roster roster; //need to change to something relivent
+	Roster roster; //need to change to something relevent
+
+	for (int i = 0; i < 5; ++i) {
+		roster.parse(studentData[i]);
+
+	}
 	
 	
 
-	roster.printAll();
+	/*roster.printAll();
 	roster.printInvaildEmails();
 
 	//loop through rosterarray and for each elememt
@@ -26,6 +31,6 @@ int main() {
 	roster.remove("A3");
 	// expected the above line should print a message saying such a student with this id isnt found
 
-	delete roster;
+	delete roster; */
 
 }
